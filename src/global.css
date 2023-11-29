@@ -1,19 +1,9 @@
+/* you may get warnings here if you don't have "postCSS language support" extension */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   font-family: [sans];
-}
-
-@layer utilities {
-  .flex-center {
-    @apply flex justify-center items-center;
-  }
-  .flex-between {
-    @apply flex justify-between items-center;
-  }
-  .flex-start {
-    @apply flex justify-start items-center;
-  }
+  background-color: theme("colors.background");
 }
