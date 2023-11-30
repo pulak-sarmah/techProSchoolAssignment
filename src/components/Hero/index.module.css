@@ -20,7 +20,7 @@
        * Styles for the title element.
        **/
       .title {
-        @apply mb-2 text-xl md:text-3xl xl:text-5xl;
+        @apply mb-2 text-xl font-bold md:text-3xl xl:text-5xl;
       }
 
       /**

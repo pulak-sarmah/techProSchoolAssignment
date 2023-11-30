@@ -2,38 +2,35 @@
 
 /* Navbar container styling */
 .navbar {
-  @apply flex items-center justify-between; /* Flex container with space-between alignment */
+  @apply flex items-center justify-between;
 
   /* Logo section styling */
   .logoWrapper {
-    @apply flex items-center justify-center space-x-4; /* Flex container with center alignment and spacing */
+    @apply flex items-center justify-center space-x-4;
 
     /* Logo styling */
     .logo {
-      @apply text-lg font-bold sm:text-xl lg:text-2xl; /* Text size and font weight */
-      color: theme("colors.primary.grey"); /* Text color using theme color */
+      @apply text-lg font-bold sm:text-xl lg:text-2xl;
+      color: theme("colors.primary.grey");
     }
   }
 
   /* Desktop navigation links styling */
   .navlinksWrapper {
-    @apply hidden sm:flex items-center space-x-6; /* Hide on small screens, flex container with spacing */
+    @apply hidden sm:flex items-center space-x-6;
 
     /* Navigation links list styling */
     .navlinksList {
-      @apply flex space-x-6; /* Flex container with spacing */
-
+      @apply flex space-x-6;
       /* Individual navigation link styling */
       .navLink {
-        @apply px-3 py-3 rounded-md transition-all duration-300 active:scale-90; /* Padding, rounded corners, and transition */
-        color: theme("colors.primary.grey"); /* Text color using theme color */
+        @apply px-3 py-3 rounded-md transition-all duration-300 active:scale-90;
+        color: theme("colors.primary.grey");
 
         /* Hover effect */
         &:hover {
-          @apply cursor-pointer; /* Change cursor on hover */
-          background: theme(
-            "colors.primary.grey_light"
-          ); /* Background color on hover using theme color */
+          @apply cursor-pointer;
+          background: theme("colors.primary.grey_light");
         }
       }
     }
@@ -41,30 +38,27 @@
 
   /* Mobile navigation icon styling */
   .navIcon {
-    @apply sm:hidden border px-2 py-1 rounded-md; /* Hide on small screens, border and padding */
-    border-color: theme("colors.outline"); /* Border color using theme color */
-
+    @apply sm:hidden border px-2 py-1 rounded-md;
+    border-color: theme("colors.outline");
     /* Hover effect */
     &:hover {
-      @apply cursor-pointer; /* Change cursor on hover */
-      background: theme(
-        "colors.primary.grey_light"
-      ); /* Background color on hover using theme color */
+      @apply cursor-pointer;
+      background: theme("colors.primary.grey_light");
     }
   }
 
   /* Backdrop for the mobile navigation menu styling */
   .backDrop {
-    @apply fixed top-[4.7rem] inset-0 bg-opacity-60 bg-primary-grey z-10 sm:hidden; /* Fixed position, background styling */
+    @apply fixed top-[4.7rem] inset-0 bg-opacity-60 bg-primary-grey z-10 sm:hidden;
   }
 
   /* Mobile navigation menu styling */
   .mobileNavList {
-    @apply pt-8; /* Padding-top equivalent to pt-8 */
+    @apply pt-8;
 
     /* Individual mobile navigation link styling */
     .mobileNavLink {
-      @apply py-3 ml-2 w-[92%] mb-1 rounded-md cursor-pointer pl-[2rem] pr-[8rem] hover:bg-primary-grey_light active:scale-95; /* Padding, margins, width, cursor, and transition */
+      @apply py-3 ml-2 w-[92%] mb-1 rounded-md cursor-pointer pl-[2rem] pr-[8rem] hover:bg-primary-grey_light active:scale-95;
     }
   }
 }

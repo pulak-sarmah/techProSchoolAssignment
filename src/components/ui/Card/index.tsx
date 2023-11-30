@@ -1,19 +1,27 @@
-import Button from "../Button";
-
 import styles from "./index.module.css";
 
 export type CourseCardType = {
   title: string;
   image: string;
   price: string;
+  children: React.ReactNode;
+  loading?: boolean;
   subtitle?: string;
   className?: string;
 };
 
-const Card = ({ title, subtitle, image, price, className }: CourseCardType) => {
+const Card = ({
+  title,
+  subtitle,
+  image,
+  price,
+  className,
+  children,
+}: CourseCardType) => {
   return (
     <div className={`${styles.card} ${className}`}>
       {/* Course Image */}
+
       <img className={styles.cardImg} src={image} alt="Course Image" />
 
       {/* Course Content */}
@@ -31,13 +39,7 @@ const Card = ({ title, subtitle, image, price, className }: CourseCardType) => {
             </p>
           </div>
         </div>
-
-        {/* reUsuable Button , accept name, backgroundColor, hoverBackgroundColor and a optional className*/}
-        <Button
-          name="Enroll"
-          backgroundColor="bg-primary-n_blue"
-          hoverBackgroundColor="bg-primary-n_blue_light"
-        />
+        {children}
       </div>
     </div>
   );
