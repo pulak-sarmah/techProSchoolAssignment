@@ -2,7 +2,7 @@
  * Styles for the Hero section.
  * */
 .heroSection {
-  @apply overflow-hidden flex items-center justify-center  h-[29rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[34rem];
+  @apply overflow-hidden flex items-center justify-center  h-[27rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[34rem];
   background: theme("colors.primary.n_blue");
   /**
    * Styles for the container that holds hero content.
@@ -20,7 +20,7 @@
        * Styles for the title element.
        **/
       .title {
-        @apply mb-2 text-xl font-bold md:text-3xl xl:text-5xl;
+        @apply mb-2 text-3xl font-bold xl:text-5xl;
       }
 
       /**
