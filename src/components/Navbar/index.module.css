@@ -55,7 +55,7 @@
 
   /* Backdrop for the mobile navigation menu styling */
   .backDrop {
-    @apply fixed top-[4.7rem] inset-0 bg-opacity-50 bg-primary-grey -z-10; /* Fixed position, background styling */
+    @apply fixed top-[4.7rem] inset-0 bg-opacity-50 bg-primary-grey -z-10 sm:hidden; /* Fixed position, background styling */
   }
 
   /* Mobile navigation menu styling */
@@ -64,7 +64,7 @@
 
     /* Individual mobile navigation link styling */
     .mobileNavLink {
-      @apply py-4 ml-2 w-[92%] rounded-md cursor-pointer pl-[2rem] pr-[8rem] hover:bg-white active:scale-95; /* Padding, margins, width, cursor, and transition */
+      @apply py-3 ml-2 w-[92%] mb-1 rounded-md cursor-pointer pl-[2rem] pr-[8rem] hover:bg-primary-grey_light active:scale-95; /* Padding, margins, width, cursor, and transition */
     }
   }
 }

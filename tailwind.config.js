@@ -8,13 +8,14 @@ export default {
           black: "#020617",
           white: "#f8fafc",
           grey: "#0f172a",
+          n_blue: "#001F3F",
           grey_light: "#e2e8f0",
           neutral: "#e5e5e5",
           neutral_light: "#fafafa",
         },
         outline: "#cbd5e1",
 
-        background: "##f8fafc",
+        background: "#fafafa",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],

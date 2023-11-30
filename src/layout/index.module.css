@@ -1,5 +1,9 @@
 /* Styling for the header */
-
 .headerContainer {
   @apply w-full px-6 py-5 shadow-sm bg-inherit relative;
+}
+
+/* Styling for the main container */
+.mainContainer {
+  @apply w-full;
 }

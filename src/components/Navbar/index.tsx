@@ -36,7 +36,7 @@ const Navbar = () => {
               key={item.id}
               onClick={handleNavLinks}
               className={`${styles.navLink} ${
-                item.active ? "bg-primary-grey_light " : ""
+                item.active && "bg-primary-grey_light "
               }`}
             >
               {item.link}
@@ -84,7 +84,7 @@ const Navbar = () => {
               key={item.id}
               onClick={handleNavLinks}
               className={` ${styles.mobileNavLink} ${
-                item.active ? "bg-white " : ""
+                item.active && "bg-primary-grey_light"
               }`}
             >
               {item.link}

@@ -1,0 +1,48 @@
+/**
+ * Styles for the Hero section.
+ * */
+.heroSection {
+  @apply overflow-hidden flex items-center justify-center bg-primary-n_blue h-[29rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[34rem];
+
+  /**
+   * Styles for the container that holds hero content.
+   **/
+  .heroContainer {
+    @apply container flex flex-col items-center justify-start px-1 py-16 mx-auto sm:flex-row text-primary-white;
+
+    /**
+     * Styles for the hero texts (title and subtitle).
+     **/
+    .heroTexts {
+      @apply order-2 p-2 mt-4 sm:w-1/2 sm:order-1 sm:mt-0;
+
+      /**
+       * Styles for the title element.
+       **/
+      .title {
+        @apply mb-2 text-xl md:text-3xl xl:text-5xl;
+      }
+
+      /**
+       * Styles for the subtitle element.
+       **/
+      .subTitle {
+        @apply text-xs md:text-sm xl:text-base;
+      }
+    }
+  }
+
+  /**
+   * Styles for the container that holds the hero image.
+   **/
+  .heroImgContainer {
+    @apply order-1 sm:w-1/2 sm:order-2;
+
+    /**
+     * Styles for the hero image.
+     **/
+    .heroImg {
+      @apply w-3/4 h-auto mx-auto rounded-full;
+    }
+  }
+}
