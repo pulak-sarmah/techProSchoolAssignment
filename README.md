@@ -11,7 +11,6 @@ This project is a course listing page developed as part of the [TechProSchool](h
 
 ![Screenshot 1](public/1.png)
 ![Screenshot 2](public/2.png)
-![Screenshot 3](public/3.png)
 
 ## Installation
 
