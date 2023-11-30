@@ -1,0 +1,3 @@
+.courseContainer {
+  @apply container flex flex-wrap justify-center gap-4 py-20 mx-auto;
+}

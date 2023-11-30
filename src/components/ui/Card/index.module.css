@@ -1,0 +1,38 @@
+.card {
+  @apply w-[92%] p-4 mx-2 my-4 overflow-hidden  rounded-lg shadow-lg border-[1px] hover:scale-105 transition-all md:w-5/6 lg:w-2/5 xl:w-1/4 cursor-pointer;
+
+  background: theme("colors.primary.white");
+  border-color: theme("colors.outline");
+  &:hover {
+    border-color: theme("colors.primary.n_blue");
+    background: theme("colors.primary.neutral");
+  }
+
+  .cardImg {
+    @apply object-cover w-full p-4;
+  }
+
+  .cardCourse {
+    @apply p-4;
+
+    .textContent {
+      @apply pb-2;
+      .cardTitle {
+        @apply mb-2 text-xl font-bold;
+      }
+
+      .cardSubTitle {
+        @apply text-xs sm:text-base;
+      }
+
+      .priceWrapper {
+        @apply rounded-full w-[5rem] my-2;
+        background: theme("colors.primary.n_blue");
+
+        .price {
+          @apply py-2 mb-2 font-bold text-center text-white;
+        }
+      }
+    }
+  }
+}

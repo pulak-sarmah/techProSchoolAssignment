@@ -1,0 +1,3 @@
+.button {
+  @apply w-full px-4 py-2  transition duration-300 rounded-lg cursor-pointer active:scale-90;
+}

@@ -55,7 +55,7 @@
 
   /* Backdrop for the mobile navigation menu styling */
   .backDrop {
-    @apply fixed top-[4.7rem] inset-0 bg-opacity-50 bg-primary-grey -z-10 sm:hidden; /* Fixed position, background styling */
+    @apply fixed top-[4.7rem] inset-0 bg-opacity-60 bg-primary-grey z-10 sm:hidden; /* Fixed position, background styling */
   }
 
   /* Mobile navigation menu styling */

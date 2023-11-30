@@ -1,0 +1,8 @@
+.footerContainer {
+  @apply container py-2 mx-auto;
+
+  .footerText {
+    @apply text-xs text-center  sm:text-base;
+    color: theme(colors.primary.grey);
+  }
+}

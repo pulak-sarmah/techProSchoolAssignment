@@ -2,14 +2,14 @@
  * Styles for the Hero section.
  * */
 .heroSection {
-  @apply overflow-hidden flex items-center justify-center bg-primary-n_blue h-[29rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[34rem];
-
+  @apply overflow-hidden flex items-center justify-center  h-[29rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[34rem];
+  background: theme("colors.primary.n_blue");
   /**
    * Styles for the container that holds hero content.
    **/
   .heroContainer {
-    @apply container flex flex-col items-center justify-start px-1 py-16 mx-auto sm:flex-row text-primary-white;
-
+    @apply container flex flex-col items-center justify-start px-1 py-16 mx-auto sm:flex-row;
+    color: theme("colors.primary.white");
     /**
      * Styles for the hero texts (title and subtitle).
      **/
